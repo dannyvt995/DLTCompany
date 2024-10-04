@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 import s from './style.module.css'
-export default function FooterSection() {
+ function FooterSection() {
     return (
 
         <footer>
@@ -8,3 +8,4 @@ export default function FooterSection() {
         </footer>
     )
 }
+export default memo(FooterSection)

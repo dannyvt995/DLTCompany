@@ -1,17 +1,19 @@
-import React from 'react'
+"use client"
+import React, { memo } from 'react'
 import s from './style.module.css'
 import Link from 'next/link'
-export default function NavbarSection() {
+import { navbarContrast } from '@/Contrast/page'
+
+function NavbarSection() {
     return (
 
-        <nav>
-            NavbarSection
-            <ul>
-                <li><Link href={'/'}>Home</Link></li>
-                <li><Link href={'/about-us'}>About us</Link></li>
-                <li><Link href={'/our-service'}>Our Services</Link></li>
-                <li><Link href={'/contact-us'}>Contact</Link></li>
+        <nav className={s.navbarSection}>
+            <ul className={s.listItemNavbar}>
+                {navbarContrast.listItems.map((item,index) => (
+                      <li key={index}><Link href={item.link}>{item.name}</Link></li>
+                ))}
             </ul>
         </nav>
     )
 }
+export default memo(NavbarSection)

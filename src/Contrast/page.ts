@@ -21,7 +21,7 @@ export const buttonLink = {
         }
     }
 }
-export const navbar = {
+export const navbarContrast = {
     listItems: [
         {
             name:"Home",
