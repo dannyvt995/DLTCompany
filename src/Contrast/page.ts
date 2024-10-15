@@ -3,7 +3,8 @@ export const infoCompany = {
     des: "CIVIL - PROJECT MANAGEMENT - SURFACE TREATMENT",
     postal: "PO.Box 407, Glenroy, VIC 3046",
     email : "admin@dlttechnicalservices.com.au",
-    phone : "+61 400 526 898"
+    phone : "+61 400 526 898",
+    urlLogo:"/DLT_Logo_Single_White.png"
 }
 export const buttonLink = {
     listItems: {
@@ -21,6 +22,20 @@ export const buttonLink = {
         }
     }
 }
+export const breedCum = {
+    aboutus: {
+        name:"About Us"
+    },
+    contact: {
+        name:"Contact Us"
+    },
+    project: {
+        name:"Gallery Project"
+    },
+    service: {
+        name:"Our Service"
+    },
+}
 export const navbarContrast = {
     listItems: [
         {
@@ -36,9 +51,38 @@ export const navbarContrast = {
             link:"/our-service"
         },
         {
+            name:"Project",
+            link:"/gallery-project"
+        },
+        {
             name:"Contact",
             link:"/contact-us"
         }
+    ]
+}
+export const galleryImage = {
+    list : [
+        "/service/Civil_Construction_1.webp",
+        "/service/Civil_Construction_2.webp",
+        "/service/Civil_Construction_3.webp",
+        "/service/Civil_Construction_4.webp",
+        "/service/Civil_Construction_5.webp",
+        "/service/Civil_Construction_6.webp",
+        "/service/Civil_Construction_7.webp",
+        "/service/Civil_Construction_8.webp",
+        "/service/Civil_Construction_9.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_1.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_2.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_3.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_4.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_5.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_6.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_7.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_8.webp",
+        "/service/Skid-resistant_Colour_Surface_Treatment_9.webp",
+        "/service/Permeable_paving_1.webp",
+        "/service/Permeable_paving_2.webp",
+        "/service/Permeable_paving_3.webp"
     ]
 }
 export const pageData = {
@@ -48,6 +92,7 @@ export const pageData = {
         }
     },
     aboutus:{
+        thumb:"/banner.jpg",
         intro :[
             "DLT Technical Services is a privately owned business founded in 2016 based on nearly 20 years of extensive experience in civil construction, project management and surface treatment application.",
             "With a team of highly experienced and knowledgeable staff, DLT Technical Services strives to achieve the perfect balance of time, cost and quality for all of our projects."
@@ -59,6 +104,16 @@ export const pageData = {
             "We maintain a fleet of construction plant and machinery suitable for our projects negating the risk of industry shortfalls."
         ],
         typeofservice:[
+            "Streetscapes and Landscapes",
+            "Civil construction",
+            "Civil project management",
+            "Pavement imprinting",
+            "Streetscapes and Landscapes",
+            "Asphalt paving",
+            "Concrete paving",
+            "Stonemasonry"
+        ],
+        detailtypeofservice:[
             "All surface treatment applications such as skid resistant, bus lane, bicycle lane, pedestrian crossings",
             "Civil construction",
             "Civil project management",
