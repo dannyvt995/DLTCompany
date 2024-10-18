@@ -1,17 +1,23 @@
 "use client"
 import { useEffect, useRef, useState } from 'react';
-import Isotope from 'isotope-layout';
+
 import ImagePreload from '@/components/ImagePreload';
 import React from 'react';
 
 export default function ListProject() {
     const isotope = useRef<Isotope | null>(null); 
     const [filterKey, setFilterKey] = useState('*'); 
-
+    const pRef=  useRef(null)
     useEffect(() => {
-        isotope.current = new Isotope('.portfolio-container', {
-            itemSelector: '.portfolio-item',
-            layoutMode: 'fitRows',
+        // Import Isotope dynamically only on the client-side
+        import('isotope-layout').then((IsotopeModule) => {
+            const Isotope = IsotopeModule.default;
+            if (pRef.current) {
+                isotope.current = new Isotope(pRef.current, {
+                    itemSelector: '.portfolio-item',
+                    layoutMode: 'fitRows',
+                });
+            }
         });
 
         return () => {
@@ -70,8 +76,8 @@ export default function ListProject() {
                         </ul>
                     </div>
                 </div>
-                <div className="row portfolio-container">
-                    <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                <div className="row portfolio-container" ref={pRef}>
+                    <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item first wow fadeInUp" data-wow-delay="0.1s" >
                         <div className="portfolio-warp">
                             <div className="portfolio-img">
                                 <ImagePreload src='/service/Civil_Construction-1.webp' alt="Civil Construction || DLT Technical Services" />
