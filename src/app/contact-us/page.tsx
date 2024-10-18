@@ -1,5 +1,4 @@
 import React from 'react'
-import s from './style.module.css'
 
 import type { Metadata } from "next";
 import PageHeader from '@/modules/PageHeader';

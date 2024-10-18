@@ -1,7 +1,4 @@
 
-import Image from "next/image";
-import HomePage from "./our-service/page";
-import styles from "./page.module.css";
 import type { Metadata } from "next";
 import HeroSection from "@/modules/HeroSection";
 import Feature from "@/modules/Feature";

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function index() {
   return (
     <main>
-        <PageHeader data={breedCum.project}/>
+        <PageHeader data={breedCum.gallery}/>
        <Gallery/>
     </main>
  

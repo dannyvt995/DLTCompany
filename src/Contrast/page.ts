@@ -24,16 +24,24 @@ export const buttonLink = {
 }
 export const breedCum = {
     aboutus: {
-        name:"About Us"
+        name:"About Us",
+        des:""
     },
     contact: {
-        name:"Contact Us"
+        name:"Contact Us",
+        des:"If you have any questions or enquiries, please contact us"
     },
     project: {
-        name:"Gallery Project"
+        name:"List Project",
+        des:"Explore Projects"
+    },
+    gallery: {
+        name:"Gallery Project",
+        des:"Explore Gallery Projects"
     },
     service: {
-        name:"Our Service"
+        name:"Our Service",
+        des:"The type of works carried out by DLT Technical Services"
     },
 }
 export const navbarContrast = {
@@ -51,7 +59,11 @@ export const navbarContrast = {
             link:"/our-service"
         },
         {
-            name:"Project",
+            name:"Our Project",
+            link:"/list-project"
+        },
+        {
+            name:"Gallery",
             link:"/gallery-project"
         },
         {
@@ -62,15 +74,15 @@ export const navbarContrast = {
 }
 export const galleryImage = {
     list : [
-        "/service/Civil_Construction_1.webp",
-        "/service/Civil_Construction_2.webp",
-        "/service/Civil_Construction_3.webp",
-        "/service/Civil_Construction_4.webp",
-        "/service/Civil_Construction_5.webp",
-        "/service/Civil_Construction_6.webp",
-        "/service/Civil_Construction_7.webp",
-        "/service/Civil_Construction_8.webp",
-        "/service/Civil_Construction_9.webp",
+        "/service/Civil_Construction-1.webp",
+        "/service/Civil_Construction-2.webp",
+        "/service/Civil_Construction-3.webp",
+        "/service/Civil_Construction-4.webp",
+        "/service/Civil_Construction-5.webp",
+        "/service/Civil_Construction-6.webp",
+        "/service/Civil_Construction-7.webp",
+        "/service/Civil_Construction-8.webp",
+        "/service/Civil_Construction-9.webp",
         "/service/Skid-resistant_Colour_Surface_Treatment_1.webp",
         "/service/Skid-resistant_Colour_Surface_Treatment_2.webp",
         "/service/Skid-resistant_Colour_Surface_Treatment_3.webp",
@@ -129,15 +141,15 @@ export const pageData = {
             {
                 name : "Civil & Construction",
                 gallery:[
-                    "/service/Civil_Construction_1.webp",
-                    "/service/Civil_Construction_2.webp",
-                    "/service/Civil_Construction_3.webp",
-                    "/service/Civil_Construction_4.webp",
-                    "/service/Civil_Construction_5.webp",
-                    "/service/Civil_Construction_6.webp",
-                    "/service/Civil_Construction_7.webp",
-                    "/service/Civil_Construction_8.webp",
-                    "/service/Civil_Construction_9.webp",
+                    "/service/Civil_Construction-1.webp",
+                    "/service/Civil_Construction-2.webp",
+                    "/service/Civil_Construction-3.webp",
+                    "/service/Civil_Construction-4.webp",
+                    "/service/Civil_Construction-5.webp",
+                    "/service/Civil_Construction-6.webp",
+                    "/service/Civil_Construction-7.webp",
+                    "/service/Civil_Construction-8.webp",
+                    "/service/Civil_Construction-9.webp",
                 ]
             },
 
@@ -169,4 +181,9 @@ export const pageData = {
     contact:{
         
     }
+}
+
+
+export const corevalue = {
+    
 }

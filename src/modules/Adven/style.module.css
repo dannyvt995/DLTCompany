@@ -1,0 +1,39 @@
+
+
+.adven {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.tit {
+    position: relative;
+    display: flex;
+    text-align:  left;
+    width: fit-content;
+    font-size: 2vw;
+    line-height: 3vw;
+    color: #e49826;
+    font-weight: 600;
+    padding-top:1.5vw;
+  
+    margin-bottom:1rem;
+}
+.tit p { 
+    padding-left: 1vw;
+    margin: 0;
+}
+.tit::after {
+    content: "";
+    width: 100%;
+    height: .2vw;
+    position: absolute;
+    bottom: -.2vw;
+    background-color: #e49826;
+}
+.list {
+     margin-left: 1rem;
+}
+.icon > i  {
+    font-size: 1.7vw;
+}

@@ -1,6 +1,7 @@
-import Image from 'next/image'
+
 import React from 'react'
 import { pageData } from '@/Contrast/page'
+import ImagePreload from '@/components/ImagePreload'
 export default function Services() {
     return (
         <div className="service">
@@ -16,7 +17,7 @@ export default function Services() {
                             <div className="service-item">
                                 <div className="service-img">
 
-                                    <Image src='/service/Civil_Construction_1.webp' alt="sdf" width={200} height={200} />
+                                    <ImagePreload src='/service/Civil_Construction-1.webp' alt={`Civil_Construction_${index}`} />
                                     <div className="service-overlay">
                                         <p>
                                             {pageData.aboutus.detailtypeofservice[index]}
@@ -25,7 +26,7 @@ export default function Services() {
                                 </div>
                                 <div className="service-text">
                                     <h3>{item}</h3>
-                                  {/*   <a className="btn" href="img/service-1.jpg" data-lightbox="service">+</a> */}
+                                  {/*   <a className="btn" href="/service/Civil_Construction-1.webp" data-lightbox="Civil_Construction">+</a> */}
                                 </div>
                             </div>
                         </div>

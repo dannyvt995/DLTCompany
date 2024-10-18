@@ -12,7 +12,7 @@ export default function Feature() {
                                 </div>
                                 <div className="feature-text">
                                     <h3>Expert Worker</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <p>We will do a construction of object on time according to your requirements</p>
                                 </div>
                             </div>
                         </div>
@@ -23,7 +23,7 @@ export default function Feature() {
                                 </div>
                                 <div className="feature-text">
                                     <h3>Quality Work</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <p>We will listen to all your requirements and offer the best option</p>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ export default function Feature() {
                                 </div>
                                 <div className="feature-text">
                                     <h3>24/7 Support</h3>
-                                    <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
+                                    <p>Share your opinion about the result, feedback is very important to us</p>
                                 </div>
                             </div>
                         </div>

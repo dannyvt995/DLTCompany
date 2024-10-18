@@ -1,9 +1,9 @@
-"use client"
+
 import React, { memo } from 'react'
-import s from './style.module.css'
 import Link from 'next/link'
 import { navbarContrast,infoCompany } from '@/Contrast/page'
-import Image from 'next/image'
+
+import ImagePreload from '@/components/ImagePreload'
 
 function NavbarSection() {
     return (
@@ -11,14 +11,14 @@ function NavbarSection() {
           <div className="top-bar">
                 <div className="container-fluid">
                     <div className="row align-items-center">
-                        <div className="col-lg-4 col-md-12">
-                            <div className="logo">
-                                <a href="/">
-                                    <Image src={infoCompany.urlLogo} alt="sdf" width={200} height={200} />
-                                </a>
-                            </div>
+                        <div className="col-lg-3 col-md-12">
+                            <Link href="/" className="logo">
+                           
+                                    <ImagePreload style={{width:"100%",height:"auto"}}  priority src={infoCompany.urlLogo} alt="DLT Technical Services"/>
+                          
+                            </Link>
                         </div>
-                        <div className="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div className="col-lg-9 col-md-7 d-none d-lg-block">
                             <div className="row">
                                 <div className="col-4">
                                     <div className="top-bar-item">
@@ -31,7 +31,7 @@ function NavbarSection() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-3">
                                     <div className="top-bar-item">
                                         <div className="top-bar-icon">
                                             <i className="flaticon-call"></i>
@@ -42,7 +42,7 @@ function NavbarSection() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-5">
                                     <div className="top-bar-item">
                                         <div className="top-bar-icon">
                                             <i className="flaticon-send-mail"></i>

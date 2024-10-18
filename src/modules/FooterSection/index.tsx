@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import s from './style.module.css'
+
 import { pageData,infoCompany,navbarContrast } from '@/Contrast/page'
  function FooterSection() {
     return (

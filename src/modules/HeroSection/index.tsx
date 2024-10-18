@@ -1,40 +1,41 @@
-import Image from 'next/image'
+import ImagePreload from '@/components/ImagePreload'
+
+import Link from 'next/link'
 import React from 'react'
 
 export default function HeroSection() {
     return (
         <div id="carousel" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" className="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="0" className="active"> </li>
+                <li data-target="#carousel" data-slide-to="1"> </li>
+                <li data-target="#carousel" data-slide-to="2"> </li>
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-
-                    <Image src='/service/Civil_Construction_1.webp' alt="sdf" width={200} height={200} />
+                    <ImagePreload priority src='/service/Civil_Construction-1.webp' alt="Civil Construction || DLT Technical Services" />
                     <div className="carousel-caption">
-                        <p className="animated fadeInRight">We Are Professional</p>
-                        <h1 className="animated fadeInLeft">For Your Dream Project</h1>
-                        <a className="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
+                        <p className="animated fadeInRight">Type service</p>
+                        <h1 className="animated fadeInLeft">Civil Construction</h1>
+                        <Link className="btn animated fadeInUp" href="/our-service">Explore service</Link>
                     </div>
                 </div>
 
                 <div className="carousel-item">
-                    {/*   <img src="img/carousel-2.jpg" alt="Carousel Image"> */}
+                <ImagePreload src='/service/Skid-resistant_Colour_Surface_Treatment_1.webp' alt="Surface Treatment || DLT Technical Services" />
                     <div className="carousel-caption">
-                        <p className="animated fadeInRight">Professional Builder</p>
-                        <h1 className="animated fadeInLeft">We Build Your Home</h1>
-                        <a className="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
+                        <p className="animated fadeInRight">Type service</p>
+                        <h1 className="animated fadeInLeft">Surface Treatment</h1>
+                        <Link className="btn animated fadeInUp" href="/our-service">Explore service</Link>
                     </div>
                 </div>
 
                 <div className="carousel-item">
-                    {/*   <img src="img/carousel-3.jpg" alt="Carousel Image"> */}
+                <ImagePreload src='/service/Permeable_paving_1.webp' alt="Permeable Paving || DLT Technical Services" />
                     <div className="carousel-caption">
-                        <p className="animated fadeInRight">We Are Trusted</p>
-                        <h1 className="animated fadeInLeft">For Your Dream Home</h1>
-                        <a className="btn animated fadeInUp" href="https://htmlcodex.com/construction-company-website-template">Get A Quote</a>
+                        <p className="animated fadeInRight">Type service</p>
+                        <h1 className="animated fadeInLeft">Permeable Paving</h1>
+                        <Link className="btn animated fadeInUp" href="/our-service">Explore service</Link>
                     </div>
                 </div>
             </div>

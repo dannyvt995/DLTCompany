@@ -11,8 +11,7 @@ export default function PageHeader({data}:
                         <h2>{data.name}</h2>
                     </div>
                     <div className="col-12">
-                        <a href="">xxxxx</a>
-                        <a href="">xxxxx</a>
+                        <p>{data.des}</p>
                     </div>
                 </div>
             </div>

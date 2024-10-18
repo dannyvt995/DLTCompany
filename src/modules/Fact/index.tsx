@@ -12,7 +12,7 @@ export default function Fact() {
                                         <i className="flaticon-worker"></i>
                                     </div>
                                     <div className="fact-text">
-                                        <h2 data-toggle="counter-up">109</h2>
+                                        <h2 data-toggle="counter-up">95</h2>
                                         <p>Expert Workers</p>
                                     </div>
                                 </div>
@@ -21,7 +21,7 @@ export default function Fact() {
                                         <i className="flaticon-building"></i>
                                     </div>
                                     <div className="fact-text">
-                                        <h2 data-toggle="counter-up">485</h2>
+                                        <h2 data-toggle="counter-up">144</h2>
                                         <p>Happy Clients</p>
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@ export default function Fact() {
                                         <i className="flaticon-address"></i>
                                     </div>
                                     <div className="fact-text">
-                                        <h2 data-toggle="counter-up">789</h2>
+                                        <h2 data-toggle="counter-up">72</h2>
                                         <p>Completed Projects</p>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@ export default function Fact() {
                                         <i className="flaticon-crane"></i>
                                     </div>
                                     <div className="fact-text">
-                                        <h2 data-toggle="counter-up">890</h2>
+                                        <h2 data-toggle="counter-up">17</h2>
                                         <p>Running Projects</p>
                                     </div>
                                 </div>
