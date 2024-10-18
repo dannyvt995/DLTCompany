@@ -1,11 +1,30 @@
-
-import React, { memo } from 'react'
+"use client"
+import  { memo,useState ,useEffect} from 'react'
 import Link from 'next/link'
 import { navbarContrast,infoCompany } from '@/Contrast/page'
 
 import ImagePreload from '@/components/ImagePreload'
 
 function NavbarSection() {
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 90) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      // Clean up the event listener when the component is unmounted
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
     return (
         <>
           <div className="top-bar">
@@ -59,7 +78,7 @@ function NavbarSection() {
                 </div>
             </div>
 
-            <div className="nav-bar">
+            <div className={`nav-bar ${isSticky ? 'nav-sticky' : ''}`}>
                 <div className="container-fluid">
                     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
                         <a href="#" className="navbar-brand">MENU</a>

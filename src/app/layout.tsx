@@ -2,7 +2,7 @@ import './globals.css'
 import '../styles/bootstrap.min.css'
 import '../styles/main.css'
 
-import NavbarSection from "@/modules/NavbarSection";
+
 import FooterSection from "@/modules/FooterSection";
 
 import Script from 'next/script';
@@ -34,7 +34,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className="wrapper">
-          <NavbarSection />
+         
           {children}
           <FooterSection />
         </div>
@@ -49,7 +49,7 @@ export default function RootLayout({
         <Script src="/lib/waypoints/waypoints.min.js" />
         <Script src="/lib/counterup/counterup.min.js" />
         <Script src="/lib/slick/slick.min.js" />
-        <Script src="/lib/main.js"  strategy="lazyOnload"/>
+      {/*   <Script src="/lib/main.js"  strategy="lazyOnload"/> */}
       </body>
     </html>
   );

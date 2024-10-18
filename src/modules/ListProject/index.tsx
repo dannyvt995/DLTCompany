@@ -1,7 +1,34 @@
-import ImagePreload from '@/components/ImagePreload'
-import React from 'react'
+"use client"
+import { useEffect, useRef, useState } from 'react';
+import Isotope from 'isotope-layout';
+import ImagePreload from '@/components/ImagePreload';
+import React from 'react';
 
 export default function ListProject() {
+    const isotope = useRef<Isotope | null>(null); 
+    const [filterKey, setFilterKey] = useState('*'); 
+
+    useEffect(() => {
+        isotope.current = new Isotope('.portfolio-container', {
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows',
+        });
+
+        return () => {
+            isotope.current?.destroy();
+        };
+    }, []);
+
+    useEffect(() => {
+        if (isotope.current) {
+            isotope.current.arrange({ filter: filterKey });
+        }
+    }, [filterKey]);
+
+    const handleFilterChange = (filter: string) => {
+        setFilterKey(filter);
+    };
+
     return (
         <div className="portfolio">
             <div className="container">
@@ -12,10 +39,34 @@ export default function ListProject() {
                 <div className="row">
                     <div className="col-12">
                         <ul id="portfolio-flters">
-                            <li data-filter="*" className="filter-active">All</li>
-                            <li data-filter=".first">Complete</li>
-                            <li data-filter=".second">Running</li>
-                            <li data-filter=".third">Upcoming</li>
+                            <li
+                                data-filter="*"
+                                className={filterKey === '*' ? 'filter-active' : ''}
+                                onClick={() => handleFilterChange('*')}
+                            >
+                                All
+                            </li>
+                            <li
+                                data-filter=".first"
+                                className={filterKey === '.first' ? 'filter-active' : ''}
+                                onClick={() => handleFilterChange('.first')}
+                            >
+                                Complete
+                            </li>
+                            <li
+                                data-filter=".second"
+                                className={filterKey === '.second' ? 'filter-active' : ''}
+                                onClick={() => handleFilterChange('.second')}
+                            >
+                                Running
+                            </li>
+                            <li
+                                data-filter=".third"
+                                className={filterKey === '.third' ? 'filter-active' : ''}
+                                onClick={() => handleFilterChange('.third')}
+                            >
+                                Upcoming
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -33,7 +84,7 @@ export default function ListProject() {
                             </div>
                             <div className="portfolio-text">
                                 <h3>Project 1</h3>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -49,7 +100,7 @@ export default function ListProject() {
                             </div>
                             <div className="portfolio-text">
                                 <h3>Project 2</h3>
-                             
+
                             </div>
                         </div>
                     </div>
@@ -65,7 +116,7 @@ export default function ListProject() {
                             </div>
                             <div className="portfolio-text">
                                 <h3>Project 3</h3>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -81,7 +132,7 @@ export default function ListProject() {
                             </div>
                             <div className="portfolio-text">
                                 <h3>Project 4</h3>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -97,7 +148,7 @@ export default function ListProject() {
                             </div>
                             <div className="portfolio-text">
                                 <h3>Project 5</h3>
-               
+
                             </div>
                         </div>
                     </div>
@@ -113,7 +164,7 @@ export default function ListProject() {
                             </div>
                             <div className="portfolio-text">
                                 <h3>Project 6</h3>
-                        
+
                             </div>
                         </div>
                     </div>

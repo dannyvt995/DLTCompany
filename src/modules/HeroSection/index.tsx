@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function HeroSection() {
+    
     return (
         <div id="carousel" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">

@@ -64,7 +64,7 @@ export const navbarContrast = {
         },
         {
             name:"Gallery",
-            link:"/gallery-project"
+            link:"/our-gallery"
         },
         {
             name:"Contact",

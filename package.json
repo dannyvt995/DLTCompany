@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.7.1",
+    "next": "14.2.4",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.14"
+    "react-toastify": "^10.0.6"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/isotope-layout": "^3.0.14",
+    "@types/jquery": "^3.5.31",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.16",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.14"
+    "eslint-config-next": "14.2.14",
+    "typescript": "^5"
   }
 }

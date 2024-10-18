@@ -5,7 +5,7 @@ import PageHeader from '@/modules/PageHeader';
 import Intro from '@/modules/Intro';
 import Faq from '@/modules/Faq';
 import { breedCum , pageData} from '@/Contrast/page';
-
+import NavbarSection from "@/modules/NavbarSection";
 import FormSection from '@/modules/FormSection';
 import Adven from '@/modules/Adven';
 export const metadata: Metadata = {
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 export default function index() {
   return (
     <main>
+      <NavbarSection/>
         <PageHeader data={breedCum.aboutus}/>
         <Intro data={pageData.aboutus}/>
         <Adven/>
