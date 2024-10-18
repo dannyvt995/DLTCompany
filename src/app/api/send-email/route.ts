@@ -1,11 +1,8 @@
 import { NextResponse } from 'next/server';
-import nodemailer from "nodemailer";
+
 import { mailOptions, transporter } from "../../../config/nodemailer";
 
 
-type ResponseData = {
-  message: string;
-};
 
 const CONTACT_MESSAGE_FIELDS: Record<string, string> = {
   fullName: "Name",
@@ -57,6 +54,7 @@ export async function POST(request: Request) {
         ...mailOptions,
         ...generateEmailContent(data),
         subject: "Info from website dlt company",
+        cc: "creatiflow.danny@gmail.com",
       });
   
       return NextResponse.json({ message: "Data received successfully" }, { status: 200 });
