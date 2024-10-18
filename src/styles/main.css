@@ -1,3 +1,30 @@
+
+
+
+
+  
+.Toastify__toast-icon svg{
+    fill: #fd7e14 !important;
+}
+.Toastify__progress-bar {
+    border-radius: unset !important;
+    background-color: #fd7e14 !important;
+}
+.Toastify__toast {
+    border-radius: unset !important;
+    color: #ffffff !important;
+    background-color: #030f27 !important;
+}
+
+
+
+
+
+
+
+
+
+
 /*******************************/
 /********* General CSS *********/
 /*******************************/

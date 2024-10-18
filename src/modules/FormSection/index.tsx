@@ -11,10 +11,10 @@ export default function FormSection() {
         typeService: "",
         content: "",
       });
-    
+     
       const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-    
+       
         const promise = fetch("/api/send-email", {
           method: "POST",
           headers: {
@@ -50,6 +50,7 @@ export default function FormSection() {
       };
   return (
     <div className="contact wow fadeInUp">
+     
     <div className="container">
         <div className="section-header text-center">
             <p>Get In Touch</p>
