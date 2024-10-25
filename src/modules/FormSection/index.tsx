@@ -75,9 +75,9 @@ export default function FormSection() {
                     </div>
                     <div className="contact-item">
                         <i className="flaticon-send-mail"></i>
-                        <div className="contact-text">
+                        <div className="contact-text ">
                             <h2>Email</h2>
-                            <p>{infoCompany.email}</p>
+                            <p className='dkouyhbs'>{infoCompany.email}</p>
                         </div>
                     </div>
                 </div>

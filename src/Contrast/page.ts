@@ -2,7 +2,7 @@ export const infoCompany = {
     name : "DLT Technical Services",
     des: "CIVIL - PROJECT MANAGEMENT - SURFACE TREATMENT",
     postal: "PO.Box 407, Glenroy, VIC 3046",
-    email : "admin@dlttechnicalservices.com.au",
+    email : `admin@dlttechnicalservices.com.au`,
     phone : "+61 400 526 898",
     urlLogo:"/DLT_Logo_Single_White.png"
 }
@@ -134,6 +134,16 @@ export const pageData = {
             "Asphalt paving",
             "Concrete paving",
             "Stonemasonry"
+        ],
+        imgtypeofservice:[
+            "/service/Civil_Construction-1.webp",
+            "/service/Civil_Construction-6.webp",
+            "/service/Skid-resistant_Colour_Surface_Treatment_1.webp",
+            "/service/Skid-resistant_Colour_Surface_Treatment_7.webp",
+            "/service/Permeable_paving_1.webp",
+            "/service/Permeable_paving_2.webp",
+            "/service/Permeable_paving_3.webp",
+            "/service/Civil_Construction-9.webp"
         ]
     },
     service:{

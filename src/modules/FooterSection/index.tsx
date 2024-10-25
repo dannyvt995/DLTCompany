@@ -24,8 +24,8 @@ import { pageData,infoCompany,navbarContrast } from '@/Contrast/page'
                 <div className="col-md-6 col-lg-4">
                     <div className="footer-link">
                         <h2>Services Areas</h2>
-                        {pageData.service.list.map((item,index) => (
-                             <a  key={index} href="">{item.name}</a>
+                        {pageData.aboutus.typeofservice.map((item,index) => (
+                             <a  key={index} href="/our-service">{item}</a>
                             
                         ))}
                     </div>

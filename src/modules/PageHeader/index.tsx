@@ -1,5 +1,5 @@
 import React from 'react'
-
+import s from './style.module.css'
 export default function PageHeader({data}:
     {data:any}
 ) {
@@ -11,7 +11,7 @@ export default function PageHeader({data}:
                         <h2>{data.name}</h2>
                     </div>
                     <div className="col-12">
-                        <p>{data.des}</p>
+                        <p className={s.sub}>{data.des}</p>
                     </div>
                 </div>
             </div>

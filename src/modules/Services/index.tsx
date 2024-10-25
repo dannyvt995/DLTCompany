@@ -17,7 +17,7 @@ export default function Services() {
                             <div className="service-item">
                                 <div className="service-img">
 
-                                    <ImagePreload src='/service/Civil_Construction-1.webp' alt={`Civil_Construction_${index}`} />
+                                    <ImagePreload src={pageData.aboutus.imgtypeofservice[index]} alt={`Civil_Construction_${index}`} />
                                     <div className="service-overlay">
                                         <p>
                                             {pageData.aboutus.detailtypeofservice[index]}

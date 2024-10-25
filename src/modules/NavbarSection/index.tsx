@@ -4,11 +4,13 @@ import Link from 'next/link'
 import { navbarContrast,infoCompany } from '@/Contrast/page'
 
 import ImagePreload from '@/components/ImagePreload'
+import { usePathname } from 'next/navigation'
 
 function NavbarSection() {
     const [isSticky, setIsSticky] = useState(false);
-
+    const pathName = usePathname()
     useEffect(() => {
+  
       const handleScroll = () => {
         if (window.scrollY > 90) {
           setIsSticky(true);
@@ -89,7 +91,7 @@ function NavbarSection() {
                         <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <ul className="navbar-nav mr-auto">
                                 {navbarContrast.listItems.map((item,index) => (
-                                    <li key={index}><Link className='nav-item nav-link' href={item.link}>{item.name}</Link></li>
+                                    <li key={index} className={pathName === item.link ? "active" : ""}><Link className='nav-item nav-link' href={item.link}>{item.name}</Link></li>
                                 ))}
                             </ul>
                           
