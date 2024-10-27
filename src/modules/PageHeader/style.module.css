@@ -1,3 +1,5 @@
 .sub {
     font-style: italic;
+    max-width: 70%;
+    margin: auto;
 }

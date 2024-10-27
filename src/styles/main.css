@@ -103,6 +103,14 @@ a:focus {
 /**********************************/
 /********** Top Bar CSS ***********/
 /**********************************/
+@media (max-width:991.98px) {
+    .top-bar {
+        background: unset !important;
+    }
+    .top-bar .logo{
+        margin : auto !important;
+    }
+}
 .top-bar {
     position: relative;
     height: 90px;
@@ -196,35 +204,54 @@ a:focus {
  
 }
 
-.nav-bar.nav-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 1366px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-    z-index: 999;
-}
+
 
 .nav-bar .navbar {
     height: 100%;
     background: var(--p2-color) !important;
 }
-@media (max-width:800px) {
+@media (max-width:991.98px) {
+    .page-header {
+        margin-top: calc(70px + 90px);
+    }
+    .top-bar {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        background-color: white !important;
+    }
+    .nav-bar {
+        top: 90px;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
     .navbar-nav {
+      
         /* justify-content: space-around;
-        width: 100%; */ list-style: circle !important;
+        width: 100%; */ list-style: square !important;
         margin-left: 2rem;
     }
 }
-@media (min-width:800px) {
+@media (min-width:991.98px) {
     .navbar-nav li{
             margin: 0 1rem;
+    }
+    .nav-bar.nav-sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        max-width: 1366px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+        z-index: 999;
     }
 }
 
 .navbar-nav li {
     color: white;
     position: relative;
+    width: fit-content;
 }
 .navbar-nav li::before {
     content: "";
@@ -302,9 +329,14 @@ a:focus {
     .nav-bar .navbar {
         padding: 15px;
     }
-    
+    .navbar-nav  {
+        padding: 2rem 0;
+    }
     .nav-bar a.nav-link {
         padding: 5px;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 100%;
     }
     
     .nav-bar .dropdown-menu {
@@ -576,8 +608,8 @@ a:focus {
 }
 
 .feature .feature-item {
-    min-height: 250px;
-    padding: 30px;
+    min-height: 200px;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -642,7 +674,8 @@ a:focus {
 .feature .feature-text p {
     margin: 0;
     color: var(--p1-color);
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 100%;
     font-weight: 400;
 }
 
@@ -740,7 +773,7 @@ a:focus {
 
 .fact .fact-icon [class^="flaticon-"]::before {
     margin: 0;
-    font-size: 60px;
+    font-size: 2.5rem;
     line-height: 60px;
     background-image: linear-gradient(#ffffff, var(--p1-color));
     -webkit-background-clip: text;
@@ -756,17 +789,25 @@ a:focus {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+@media (max-width:991.98px) {
+    
+.fact .fact-left,
+.fact .fact-right {
+    padding-top: 40px !important;
+    padding-bottom: 40px!important;
+}
+}
 .fact .fact-text h2 {
     font-size: 35px;
     font-weight: 700;
+    line-height: normal;
 }
 
 .fact .fact-text p {
     margin: 0;
     font-size: 16px;
     font-weight: 600;
-    text-transform: uppercase;
+    line-height: normal;
 }
 
 .fact .fact-left {
@@ -836,14 +877,14 @@ a:focus {
 }
 
 .service .service-overlay p {
-    margin: 0;
+    margin: 1rem 0 0 0 ;
     color: #ffffff;
 }
 
 .service .service-text {
     display: flex;
     align-items: center;
-    height: 60px;
+    height: fit-content;
     background: var(--p2-color);
     overflow: hidden;
     white-space: nowrap;
@@ -852,9 +893,9 @@ a:focus {
 
 .service .service-text h3 {
     margin: 0;
-    padding: 0 15px 0 25px;
-    width: calc(100% - 60px);
-    font-size: 20px;
+    padding:1rem;
+   
+    font-size: 1rem;
     font-weight: 700;
     color: var(--p1-color);
     text-align: left;
@@ -1926,8 +1967,8 @@ a:focus {
 }
 
 .portfolio .portfolio-img img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
     transition: .3s;
 }
 
@@ -2198,7 +2239,9 @@ a:focus {
     color: var(--p1-color);
     letter-spacing: 1px;
 }
-
+.footer .footer-contact p {
+    color: white;
+}
 .footer .footer-contact p i {
     width: 25px;
 }
@@ -2217,6 +2260,8 @@ a:focus {
     border: 1px solid rgba(256, 256, 256, .3);
     border-radius: 60px;
     transition: .3s;
+
+    margin-right: 5px;
 }
 
 .footer .footer-social a i {

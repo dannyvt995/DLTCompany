@@ -83,7 +83,7 @@ function NavbarSection() {
             <div className={`nav-bar ${isSticky ? 'nav-sticky' : ''}`}>
                 <div className="container-fluid">
                     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" className="navbar-brand">MENU</a>
+                        <a href="#" className="navbar-brand">Menu</a>
                         <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span className="navbar-toggler-icon"></span>
                         </button>
