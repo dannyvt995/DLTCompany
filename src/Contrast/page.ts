@@ -104,7 +104,7 @@ export const pageData = {
         }
     },
     aboutus:{
-        thumb:"/banner.jpg",
+        thumb:"/Banner.jpg",
         intro :[
             "DLT Technical Services is a privately owned business founded in 2016 based on nearly 20 years of extensive experience in civil construction, project management and surface treatment application.",
             "With a team of highly experienced and knowledgeable staff, DLT Technical Services strives to achieve the perfect balance of time, cost and quality for all of our projects."
