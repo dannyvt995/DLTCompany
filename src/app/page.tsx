@@ -12,7 +12,25 @@ import FormSection from "@/modules/FormSection";
 
 export const metadata: Metadata = {
   title: "Home || DLT TECHNICAL SERVICES",
-  description: "Product / Service Categories Project Name Talk about this portfolio piece–who you did it for and why, plus what the results were (potential customers love to hear about real-world results).…Read More",
+  description: "Company DLT Technical Services is a privately owned business founded in 2016 based on nearly 20 years of extensive experience in civil construction, project management and surface treatment application.",
+  openGraph: {
+    title: "Home || DLT TECHNICAL SERVICES",
+    description: "Company DLT Technical Services is a privately owned business founded in 2016 based on nearly 20 years of extensive experience in civil construction, project management and surface treatment application.",
+    images: [
+      {
+        url: "https://dlt-company.vercel.app/logo_clear.png", 
+        width: 500,
+        height: 300,
+      },
+    ],
+    url: "https://dlt-company.vercel.app/", 
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Home || DLT TECHNICAL SERVICES",
+    description: "Company DLT Technical Services is a privately owned business founded in 2016 based on nearly 20 years of extensive experience in civil construction, project management and surface treatment application.",
+    images: ["https://dlt-company.vercel.app/logo_clear.png"], 
+  },
 };
 
 export default function Main() {
