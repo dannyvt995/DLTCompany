@@ -2,8 +2,14 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --p1-color :   #e49826;
-  --p2-color :   #030f27;
+  --background_color_1 :   #e49826;
+  --background_color_2 :   #030f27;
+
+  --head-color: #00000;
+  --subhead-color: #00000;
+
+  --background_btn_1: #e49826;
+  --background_btn_2: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {

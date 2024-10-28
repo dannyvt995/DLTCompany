@@ -13,7 +13,7 @@
     width: fit-content;
     font-size: 2vw;
     line-height: 3vw;
-    color: var(--p1-color);
+    color: var(--background_color_1);
     font-weight: 600;
     padding-top:1.5vw;
   
@@ -29,7 +29,7 @@
     height: .2vw;
     position: absolute;
     bottom: -.2vw;
-    background-color: var(--p1-color);
+    background-color: var(--background_color_1);
 }
 .list {
      margin-left: 1rem;

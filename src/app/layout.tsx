@@ -8,6 +8,7 @@ import FooterSection from "@/modules/FooterSection";
 import Script from 'next/script';
 import UseGui from '../../hook/useGui';
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
