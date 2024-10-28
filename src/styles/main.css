@@ -350,6 +350,10 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {
+    .carousel {
+        height: calc(100vh - 86px) !important;
+        margin-top: 86px !important;
+    }
     .nav-bar .navbar {
         padding: 15px;
     }
@@ -608,6 +612,9 @@ a:focus {
     position: relative;
     font-size: 50px;
     font-weight: 700;
+    /* text-transform: uppercase; */
+    letter-spacing: -1px;
+    line-height: 100%;
 }
 
 @media (max-width: 767.98px) {
@@ -932,7 +939,7 @@ a:focus {
     margin: 0;
     padding:1rem;
    
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--background_color_2);
     text-align: left;
@@ -2129,11 +2136,25 @@ a:focus {
 .contact .contact-info {
     position: relative;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 1rem;
+    align-content: center;
+    display: flex;
+    height: 100%;
+}
+.contact .contact-info .imgBox {
+    display: block;
+    margin: auto;
 }
 @media (max-width:568px) {
     .contact .contact-item {
         padding: 20px !important;
+    }
+    .contact .contact-info .imgBox {
+        transform: scale(1.5);
+        margin-top: 1rem;
+    }
+    .contact .col-md-6 {
+       /*  padding-bottom: 0 !important; */
     }
 }
 .contact .contact-item {

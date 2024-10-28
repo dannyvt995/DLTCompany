@@ -59,8 +59,10 @@ export default function FormSection() {
         <div className="row">
             <div className="col-md-6">
                 <div className="contact-info">
-                 
-                <ImagePreload style={{width:"100%",height:"auto"}}  priority src={"/logo_clear_full.png"} alt="DLT Technical Services"/>
+                  <div className='imgBox'>
+                  <ImagePreload style={{width:"100%",height:"auto"}}  priority src={"/logo_clear_full.png"} alt="DLT Technical Services"/>
+                  </div>
+                
                    {/*  <div className="contact-item">
                         <i className="flaticon-address"></i>
                         <div className="contact-text">

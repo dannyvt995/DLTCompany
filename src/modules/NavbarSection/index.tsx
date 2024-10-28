@@ -85,7 +85,7 @@ function NavbarSection() {
                     <nav className="navbar navbar-expand-lg navbar-dark">
                     <Link href="/" className="logoMobi">
                            
-                           <ImagePreload style={{width:"100%",height:"80%"}}  priority src={"/logo_clear.png"} alt="DLT Technical Services"/>
+                           <ImagePreload style={{width:"100%",height:"auto"}}  priority src={"/logo_clear.png"} alt="DLT Technical Services"/>
                  
                    </Link>
                        <div>
