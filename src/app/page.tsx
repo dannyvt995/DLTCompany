@@ -7,6 +7,8 @@ import Fact from "@/modules/Fact";
 import Faq from "@/modules/Faq";
 import {pageData} from '@/Contrast/page';
 import NavbarSection from "@/modules/NavbarSection";
+import Services from "@/modules/Services";
+import FormSection from "@/modules/FormSection";
 
 export const metadata: Metadata = {
   title: "Home || DLT TECHNICAL SERVICES",
@@ -22,8 +24,10 @@ export default function Main() {
         <HeroSection/>
         <Feature/>
         <Intro data={pageData.aboutus}/>
+        <Services/>
         <Fact/>
         <Faq/>
+        <FormSection/>
 
       </main>
     </>

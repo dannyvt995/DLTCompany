@@ -1,8 +1,8 @@
 "use client"
 import {FormEvent,useState} from 'react'
-import { infoCompany } from '@/Contrast/page'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ImagePreload from '@/components/ImagePreload';
 export default function FormSection() {
     const [value, setValue] = useState({
         fullName: "",
@@ -59,7 +59,9 @@ export default function FormSection() {
         <div className="row">
             <div className="col-md-6">
                 <div className="contact-info">
-                    <div className="contact-item">
+                 
+                <ImagePreload style={{width:"100%",height:"auto"}}  priority src={"/logo_clear_full.png"} alt="DLT Technical Services"/>
+                   {/*  <div className="contact-item">
                         <i className="flaticon-address"></i>
                         <div className="contact-text">
                             <h2>Location</h2>
@@ -79,7 +81,7 @@ export default function FormSection() {
                             <h2>Email</h2>
                             <p className='dkouyhbs'>{infoCompany.email}</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <ToastContainer />

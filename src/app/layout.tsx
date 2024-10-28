@@ -6,7 +6,7 @@ import '../styles/main.css'
 import FooterSection from "@/modules/FooterSection";
 
 import Script from 'next/script';
-import UseGui from '../../hook/useGui';
+//import UseGui from '../../hook/useGui';
 
 
 export default function RootLayout({
@@ -36,7 +36,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className="wrapper">
-          <UseGui/>
+         {/*  <UseGui/> */}
           {children}
           <FooterSection />
         </div>

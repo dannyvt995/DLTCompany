@@ -2,7 +2,7 @@ import React from 'react'
 import {infoCompany} from '@/Contrast/page'
 
 import Link from 'next/link'
-import ImagePreload from '@/components/ImagePreload'
+
 export default function Intro({data}:{data:any}) {
     return (
         <div className="about wow fadeInUp" data-wow-delay="0.1s">
@@ -11,7 +11,7 @@ export default function Intro({data}:{data:any}) {
                     <div className="col-lg-6 col-md-6">
                         <div className="about-img">
                          
-                        <ImagePreload src={data.thumb} alt="DLT Technical Services" style={{width:"auto",height:"100%"}}/>
+                        {/* <ImagePreload src={data.thumb} alt="DLT Technical Services" style={{width:"auto",height:"100%"}}/> */}
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6">

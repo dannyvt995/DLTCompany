@@ -25,7 +25,7 @@ export const buttonLink = {
 export const breedCum = {
     aboutus: {
         name:"About Us",
-        des:""
+        des:"About DLT Technical Services"
     },
     contact: {
         name:"Contact Us",

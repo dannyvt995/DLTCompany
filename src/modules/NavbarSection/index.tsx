@@ -35,7 +35,7 @@ function NavbarSection() {
                         <div className="col-lg-3 col-md-12">
                             <Link href="/" className="logo">
                            
-                                    <ImagePreload style={{width:"100%",height:"auto"}}  priority src={infoCompany.urlLogo} alt="DLT Technical Services"/>
+                                    <ImagePreload style={{width:"100%",height:"auto"}}  priority src={"/logo_clear.png"} alt="DLT Technical Services"/>
                           
                             </Link>
                         </div>

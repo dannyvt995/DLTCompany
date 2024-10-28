@@ -2,7 +2,9 @@ import React from 'react'
 
 export default function Fact() {
   return (
-    <div className="fact">
+    <>
+    </>
+   /*  <div className="fact" style={{display:"none !important"}}>
                 <div className="container-fluid">
                     <div className="row counters">
                         <div className="col-md-6 fact-left wow slideInLeft">
@@ -51,6 +53,6 @@ export default function Fact() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */
   )
 }

@@ -5,7 +5,7 @@ export default function Feature() {
     <div className="feature wow fadeInUp" data-wow-delay="0.1s">
                 <div className="container-fluid">
                     <div className="row align-items-center">
-                        <div className="col-lg-4 col-md-12">
+                        <div className="col-lg-3 col-md-12">
                             <div className="feature-item">
                                 <div className="feature-icon">
                                     <i className="flaticon-worker"></i>
@@ -16,7 +16,7 @@ export default function Feature() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-12">
+                        <div className="col-lg-3 col-md-12">
                             <div className="feature-item">
                                 <div className="feature-icon">
                                     <i className="flaticon-building"></i>
@@ -27,7 +27,7 @@ export default function Feature() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-12">
+                        <div className="col-lg-3 col-md-12">
                             <div className="feature-item">
                                 <div className="feature-icon">
                                     <i className="flaticon-call"></i>
