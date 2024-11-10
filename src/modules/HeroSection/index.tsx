@@ -17,7 +17,7 @@ export default function HeroSection() {
                     <ImagePreload priority src='/service/Civil_Construction-1.webp' alt="Civil Construction || DLT Technical Services" />
                     <div className="carousel-caption">
                         <p className="animated fadeInRight">Type service</p>
-                        <h1 className="animated fadeInLeft">Civil Construction</h1>
+                        <h1 className="animated fadeInLeft">CIVIL & CONSTRUCTION</h1>
                         <Link className="btn animated fadeInUp" href="/our-service">Explore service</Link>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ export default function HeroSection() {
                 <ImagePreload src='/service/Skid-resistant_Colour_Surface_Treatment_1.webp' alt="Surface Treatment || DLT Technical Services" />
                     <div className="carousel-caption">
                         <p className="animated fadeInRight">Type service</p>
-                        <h1 className="animated fadeInLeft">Surface Treatment</h1>
+                        <h1 className="animated fadeInLeft">BUILDING</h1>
                         <Link className="btn animated fadeInUp" href="/our-service">Explore service</Link>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ export default function HeroSection() {
                 <ImagePreload src='/service/Permeable_paving_1.webp' alt="Permeable Paving || DLT Technical Services" />
                     <div className="carousel-caption">
                         <p className="animated fadeInRight">Type service</p>
-                        <h1 className="animated fadeInLeft">Permeable Paving</h1>
+                        <h1 className="animated fadeInLeft">SURFACE TREATMENT SUPPLY & INSTALLATION</h1>
                         <Link className="btn animated fadeInUp" href="/our-service">Explore service</Link>
                     </div>
                 </div>

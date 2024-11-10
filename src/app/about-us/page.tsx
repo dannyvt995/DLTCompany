@@ -3,7 +3,7 @@ import React from 'react'
 import type { Metadata } from "next";
 import PageHeader from '@/modules/PageHeader';
 import Intro from '@/modules/Intro';
-import Faq from '@/modules/Faq';
+
 import { breedCum , pageData} from '@/Contrast/page';
 import NavbarSection from "@/modules/NavbarSection";
 import FormSection from '@/modules/FormSection';
@@ -38,7 +38,6 @@ export default function index() {
         <PageHeader data={breedCum.aboutus}/>
         <Intro data={pageData.aboutus}/>
         <Adven/>
-        <Faq/>
     <FormSection/>
     </main>
  

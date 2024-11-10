@@ -40,8 +40,8 @@ function NavbarSection() {
                             </Link>
                         </div>
                         <div className="col-lg-9 col-md-7 d-none d-lg-block">
-                            <div className="row">
-                                <div className="col-4">
+                            <div className="row add01">
+                               {/*  <div className="col-4">
                                     <div className="top-bar-item">
                                         <div className="top-bar-icon">
                                             <i className="flaticon-calendar"></i>
@@ -51,25 +51,25 @@ function NavbarSection() {
                                             <p>Mon - Fri, 8:00 - 9:00</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-3">
+                                </div> */}
+                                <div className="col-4">
                                     <div className="top-bar-item">
                                         <div className="top-bar-icon">
                                             <i className="flaticon-call"></i>
                                         </div>
                                         <div className="top-bar-text">
-                                            <h3>Call Us</h3>
+                                            <h3>Phone</h3>
                                             <p>{infoCompany.phone}</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-5">
+                                <div className="col-4">
                                     <div className="top-bar-item">
                                         <div className="top-bar-icon">
                                             <i className="flaticon-send-mail"></i>
                                         </div>
                                         <div className="top-bar-text">
-                                            <h3>Email Us</h3>
+                                            <h3>Email</h3>
                                             <p>{infoCompany.email}</p>
                                         </div>
                                     </div>

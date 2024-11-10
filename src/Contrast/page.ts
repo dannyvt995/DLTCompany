@@ -1,7 +1,7 @@
 export const infoCompany = {
     name : "DLT Technical Services",
     des: "CIVIL - PROJECT MANAGEMENT - SURFACE TREATMENT",
-    postal: "PO.Box 407, Glenroy, VIC 3046",
+    postal: "PO BOX 260, BRAYBROOK, VIC 3019",
     email : `admin@dlttechnicalservices.com.au`,
     phone : "+61 400 526 898",
     urlLogo:"/DLT_Logo_Single_White.png"
@@ -106,8 +106,10 @@ export const pageData = {
     aboutus:{
         thumb:"/Banner.jpg",
         intro :[
-            "DLT Technical Services is a privately owned business founded in 2016 based on nearly 20 years of extensive experience in civil construction, project management and surface treatment application.",
-            "With a team of highly experienced and knowledgeable staff, DLT Technical Services strives to achieve the perfect balance of time, cost and quality for all of our projects."
+            "Our team understands that delivering projects successfully is not enough - we must also build long-lasting and productive relationships with our clients.",
+            "With over 20 years of experience in the construction industry, our team of skilled professionals is dedicated to delivering high-quality, innovative, and sustainable solutions for our clients in Civil & Construction, Building & Maintenance and Surface Treatment works.",
+            "We pride ourselves on our commitment to excellence, safety, and customer satisfaction. Our comprehensive services encompass every stage of the construction process, ensuring that each project is completed on time, within budget, and to the highest standards.",
+            "We always make it our mission to bring your vision to life and transform your ideas into success."
         ],
         principle:[
             "We pay attention to your objectives.",

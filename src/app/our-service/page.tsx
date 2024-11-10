@@ -2,7 +2,7 @@ import React from 'react'
 import type { Metadata } from "next";
 import PageHeader from '@/modules/PageHeader';
 import Services from '@/modules/Services';
-import Faq from '@/modules/Faq';
+
 import {breedCum} from '@/Contrast/page'
 import NavbarSection from "@/modules/NavbarSection";
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function index() {
       <NavbarSection/>
     <PageHeader data={breedCum.service} />
     <Services/>
-    <Faq/>
+  
     </main>
 
   )

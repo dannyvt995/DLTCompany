@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { galleryImage } from '@/Contrast/page'
 import FormSection from '../FormSection';
-import Feature from '../Feature';
 
 export default function Gallery() {
   const listClassSize = ["", "wide_gallery_item", "tall_gallery_item", "big_gallery_item"];
@@ -43,7 +42,7 @@ export default function Gallery() {
           </li>
         ))}
       </ul>
-      <Feature/>
+   
       <FormSection/>
     </div>
   );

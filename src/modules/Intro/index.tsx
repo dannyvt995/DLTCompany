@@ -16,7 +16,7 @@ export default function Intro({data}:{data:any}) {
                     </div>
                     <div className="col-lg-6 col-md-6">
                         <div className="section-header text-left">
-                            <p>Our Company</p>
+                            <p>Welcome to</p>
                             <h2>{infoCompany.name}</h2>
                         </div>
                         <div className="about-text">
@@ -25,6 +25,12 @@ export default function Intro({data}:{data:any}) {
                             </p>
                             <p>
                             {data.intro[1]}
+                            </p>
+                            <p>
+                            {data.intro[2]}
+                            </p>
+                            <p>
+                            {data.intro[3]}
                             </p>
                             <Link className="btn" href='/contact-us'>Let contact</Link>
                         </div>

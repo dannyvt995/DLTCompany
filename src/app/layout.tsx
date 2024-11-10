@@ -1,7 +1,7 @@
 import './globals.css'
 import '../styles/bootstrap.min.css'
 import '../styles/main.css'
-
+import '../styles/add.css'
 
 import FooterSection from "@/modules/FooterSection";
 

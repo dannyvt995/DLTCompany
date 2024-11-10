@@ -6,10 +6,10 @@ export default function Services() {
     return (
         <div className="service">
             <div className="container">
-                <div className="section-header text-center">
+               {/*  <div className="section-header text-center">
                     <p>Our Type Services</p>
                     <h2>We Provide Services</h2>
-                </div>
+                </div> */}
                 <div className="row">
                     
                     {pageData.aboutus.typeofservice.map((item, index) => (
