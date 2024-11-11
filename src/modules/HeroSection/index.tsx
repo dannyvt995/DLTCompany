@@ -26,7 +26,7 @@ export default function HeroSection() {
                 <ImagePreload src='/service/Skid-resistant_Colour_Surface_Treatment_1.webp' alt="Surface Treatment || DLT Technical Services" />
                     <div className="carousel-caption">
                         <p className="animated fadeInRight">Type service</p>
-                        <h1 className="animated fadeInLeft">BUILDING</h1>
+                        <h1 className="animated fadeInLeft">BUILDING & MAINTENANCE</h1>
                         <Link className="btn animated fadeInUp" href="/our-service">Explore service</Link>
                     </div>
                 </div>

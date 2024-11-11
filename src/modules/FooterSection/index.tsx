@@ -14,9 +14,7 @@ import { pageData,infoCompany,navbarContrast } from '@/Contrast/page'
                         <p><i className="fa fa-phone-alt"></i>{infoCompany.phone}</p>
                         <p><i className="fa fa-envelope"></i>{infoCompany.email}</p>
                         <div className="footer-social">
-                            <a href=""><i className="fab fa-twitter"></i></a>
                             <a href=""><i className="fab fa-facebook-f"></i></a>
-                            <a href=""><i className="fab fa-instagram"></i></a>
                             <a href=""><i className="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>

@@ -57,11 +57,11 @@ export const navbarContrast = {
         {
             name:"Our Service",
             link:"/our-service"
-        },
+        }/* ,
         {
             name:"Our Project",
             link:"/list-project"
-        },
+        } */,
         {
             name:"Gallery",
             link:"/our-gallery"
